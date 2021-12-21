@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 174, 228);
+    text-align: center;
+}
+
+.title {
+    font-size: 80px;
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(253, 175, 56);
+    padding: 30px 150px;
+    gap: 80px;
+}
+
+#newButton {
+    background-color: #3882F6;
+    border: 1px solid #3882F6;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 4px 20px;
+    border-radius: 8px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(253, 175, 56);
+    padding: 30px 150px;
+    gap: 80px;
+}
+
+.nameScore {
+    color: red;
+    font-size: 20px;
+}
+
+.scorenumber {
+    color: red;
+    font-size: 40px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 30px 60px;
+    gap: 10px;
+}
+
+.im {
+    width: 180px;
+}
+
+
+.round {
+    font-size: 25px;
+    color: white;
+}
+
+.roundResult {
+    font-size: 35px;
+    color: white;
+}
+
+.gameResult {
+    font-size: 50px;
+    color: white;
+    font-weight: 600;
+}
+
+.info {
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(44, 38, 100);
+    padding: 20px;
+}

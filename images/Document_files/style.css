@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(80, 174, 228);
+}
+
+.title {
+    font-size: 80px;
+    color: white;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(253, 175, 56);
+    padding: 70px 120px;
+    gap: 80px;
+}
+
+.im {
+    width: 150px;
+}
+
+.nameScore {
+    font-size: 35px;
+    color: white;
+}
+
+.scorenumber {
+    font-size: 50px;
+    color: white;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(250, 127, 240);
+}

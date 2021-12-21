@@ -41,18 +41,18 @@ function computerPlay() {
 function displayRoundResult(result, playerSelection, computerSelection) {
     roundNumber++;
     const roundNum = document.querySelector("#roundNumber")
-    roundNum.textContent = `Round ${roundNumber} / 5`;
+    roundNum.textContent = `Round ${roundNumber} of 5:`;
     const results = document.querySelector("#results");
     if (result == "draw")
     results.textContent = `It's a draw ! ${playerSelection.charAt(0).toUpperCase()}${playerSelection.slice(1)} against ${computerSelection.charAt(0).toUpperCase()}${computerSelection.slice(1)}`;
     else if (result == "player") {
-        results.textContent = `You win! ${playerSelection.charAt(0).toUpperCase()}${playerSelection.slice(1)} beats ${computerSelection.charAt(0).toUpperCase()}${computerSelection.slice(1)}`;
+        results.textContent = `You Win! ${playerSelection.charAt(0).toUpperCase()}${playerSelection.slice(1)} beats ${computerSelection.charAt(0).toUpperCase()}${computerSelection.slice(1)}`;
         playerScore++;
         const playSco = document.querySelector('#playerScore')
         playSco.textContent = playerScore;
     }
     else if (result == "computer") {
-        results.textContent = `You lose! ${computerSelection.charAt(0).toUpperCase()}${computerSelection.slice(1)} beats ${playerSelection.charAt(0).toUpperCase()}${playerSelection.slice(1)}`;
+        results.textContent = `You Lose! ${computerSelection.charAt(0).toUpperCase()}${computerSelection.slice(1)} beats ${playerSelection.charAt(0).toUpperCase()}${playerSelection.slice(1)}`;
         computerScore++;
         const compSco = document.querySelector('#computerScore')
         compSco.textContent = computerScore;
@@ -62,22 +62,21 @@ function displayRoundResult(result, playerSelection, computerSelection) {
 
 // End of the game
 function endGame(end) {
-    //const endResult = document.createElement('div');
-    const endResult = document.querySelector('#endGame');
+    const endResult = document.createElement('div');
     if (playerScore == computerScore) {
         endResult.textContent = `It's a draw, ${playerScore} to ${computerScore}!`
     }
     else if (playerScore > computerScore) {
-        endResult.textContent = `You won the game ${playerScore} to ${computerScore}!`
+        endResult.textContent = `You win, ${playerScore} to ${computerScore}!`
     }
     else if (playerScore < computerScore) {
-    endResult.textContent = `You lost the game ${playerScore} to ${computerScore}!`
+    endResult.textContent = `You lose, ${playerScore} to ${computerScore}!`
     };
-    //const results = document.querySelector('#results');
-    //results.appendChild(endResult);
+    const results = document.querySelector('#results');
+    results.appendChild(endResult);
     // New Game button
     const newGame =  document.querySelector('#buttons')
-    newGame.innerHTML = '<button id="newButton">New game?</button>';
+    newGame.innerHTML = '<button id="newButton">Play a new game ?</button>';
     const newButton = document.querySelector('#newButton');
     newButton.addEventListener('click', () => {
         // location.reload();
@@ -103,9 +102,6 @@ function restartGame() {
 
     const results = document.querySelector('#results');
     results.textContent = '';
-
-    const endResult = document.querySelector('#endGame');
-    endResult.textContent = '';
 };
 
 let roundNumber = 0;

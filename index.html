@@ -4,37 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <script src="./script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <div class="content"></div>
-        <div class="centered">
-            <h1>Rock, Paper, Scissors Game!</h1>
+        <div class="hero">
+            <h1 class="title">Rock Paper Scissors</h1>
         </div>
-        <div class ="left">
-            <div id="buttons">
-                <button value="rock">Rock</button>
-                <button value="paper">Paper</button>
-                <button value="scissors">Scissors</button>
+        <div class="main">
+            <div class ="player">
+                <div id="buttons">
+                    <button value="rock">Rock</button>
+                    <button value="paper">Paper</button>
+                    <button value="scissors">Scissors</button>
+                </div>
             </div>
-            <div class="score">
-                <div>Player score:</div>
-                <div id="playerScore">0</div>
-            </div>
-        </div>
-        <div class= "right">
-            <img class="im" src="./" alt="ran">
-            <img class="im" src="./" alt="ran">
-            <img class="im" src="./" alt="ran">
-            <div class="score">
-                <div>Computer score:</div>
-                <div id="computerScore">0</div>
+            <div class= "computer">
+                <div class="container">
+                    <img class="im" src="./images/rock.png" alt="rock">
+                    <img class="im" src="./images/paper.png" alt="ran">
+                    <img class="im" src="./images/scissors.png" alt="ran">
+                </div>
             </div>
         </div>
-        <div class="centered">
-            <div id="roundNumber"></div>
-            <div id="results"></div>
+        <div class="score">
+            <div class ="player">
+                    <div class="nameScore">Player score</div>
+                    <div class="scorenumber" id="playerScore">0</div>
+            </div>
+            <div class= "computer">
+                    <div class="nameScore">Computer score</div>
+                    <div class="scorenumber" id="computerScore">0</div>
+            </div>
+        </div>
+        <div class="info">
+            <div class="round" id="roundNumber"></div>
+            <div class="roundResult" id="results"></div>
+            <div class="gameResult" id="endGame"></div>
         </div>
 </body>
 </html>
