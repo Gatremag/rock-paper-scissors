@@ -1,9 +1,11 @@
 // Click on buttons, and start game
 function eventButtons() {
-    const buttons = document.querySelectorAll('button');
+    const buttons = document.querySelectorAll('.buttons');
+    console.log(buttons);
     buttons.forEach((button) => {
         button.addEventListener('click', () => {
-            playRound(button.value);
+            playRound(button.alt);
+            console.log(button.alt);
         });
     });
 }
@@ -88,7 +90,7 @@ function endGame(end) {
 // Restart the game
 function restartGame() {
     const restoreButtons =  document.querySelector('#buttons')
-    restoreButtons.innerHTML ='<button value="rock">Rock</button><button value="paper">Paper</button><button value="scissors">Scissors</button>';
+    restoreButtons.innerHTML ='<img class="im buttons" src="./images/rock.png" alt="rock" value="rock"><img class="im buttons" src="./images/paper.png" alt="paper" value="paper"><img class="im buttons" src="./images/scissors.png" alt="scissors" value="scissors">';
     eventButtons();
 
     playerScore = 0;

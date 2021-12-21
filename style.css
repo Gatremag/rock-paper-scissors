@@ -23,11 +23,11 @@ body {
 
 .main {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background-color: rgb(253, 175, 56);
-    padding: 30px 150px;
-    gap: 80px;
+    padding: 15px 15px;
+    gap: 20px;
 }
 
 #newButton {
@@ -42,7 +42,7 @@ body {
 
 .score {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     background-color: rgb(253, 175, 56);
     padding: 30px 150px;
@@ -65,8 +65,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    padding: 30px 60px;
-    gap: 10px;
+    padding: 40px 5px;
+    gap: 20px;
 }
 
 .im {
